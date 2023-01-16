@@ -20,11 +20,17 @@ const App = () => {
     searchMovies("Harry Potter");
   }, []);
 
+  const handleKeyDownSearch = (e) => {
+    if (e.key === 'Enter') {
+      searchMovies(searchValue);
+    }
+  }
+
   return (
     <div className="app">
       <h1>MovieMate</h1>
       <div className="search">
-        <input type="text" value={searchValue} onChange={(e) => setSearchValue(e.target.value)} placeholder="Search for a movie..." />
+        <input type="text" value={searchValue} onChange={(e) => setSearchValue(e.target.value)} onKeyDown={handleKeyDownSearch} placeholder="Search for a movie..." />
         <img
           src={SearchIcon}
           alt="Search Icon"
