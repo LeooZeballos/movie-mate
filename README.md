@@ -1,5 +1,5 @@
 # Movie Mate
-Movie Mate is a web application that allows users to search for movies, get their title, year and cover. The application is biuld with React.
+Movie Mate is a web application that allows users to search for movies, get their title, year and cover.
 
 ## Installation
 To install the application, clone the repository and run the following command in the root directory:
